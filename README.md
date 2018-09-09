@@ -6,6 +6,9 @@
     It is fault tolerance because the messages are persisted in the disk before sending to consumer to prevent data loss
     It has high throughput, and it can perform 2 million writes per sec
 
+# Prerequisites
+    Install Apache Kafka and Start Zookeeper and Kafka Server(https://kafka.apache.org/quickstart)
+    
 # Use Cases
     Log Aggregator - Collect logs from different services - as a log streaming event (Zipkin stream server makes use of this) 
     Streaming of real time data (like Uber, etc.)
@@ -20,3 +23,10 @@
  - Consumer Group
  - Leaders
  - Follower
+ 
+ # Steps
+ - start the Zookeeper
+ - start the Kafka Server
+ - run the producer project
+ - run the consumer project
+ 
